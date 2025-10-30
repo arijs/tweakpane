@@ -1,7 +1,7 @@
 import {
-	BaseInputParams,
+	type BaseInputParams,
 	formatString,
-	InputBindingPlugin,
+	type InputBindingPlugin,
 	parseRecord,
 	stringFromUnknown,
 	TextController,
@@ -109,7 +109,7 @@ describe(Pane.name, () => {
 						? {
 								initialValue: value,
 								params: result,
-						  }
+							}
 						: null;
 				},
 				binding: {

@@ -7,11 +7,7 @@
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
-  "prettier": "../../prettier.config.js",
-  "typedoc": {
-    "entryPoint": "./src/index.ts",
-    "tsconfig": "./src/tsconfig.json"
-  },
+  "prettier": "../../.prettierrc.json",
   "scripts": {
     "prepack": "run-s clean build",
     "prepublishOnly": "npm test",
@@ -29,11 +25,17 @@
     "test:scss:static": "prettier --parser scss --list-different \"lib/sass/**/*.scss\"",
     "test:scss:dynamic": "sass lib/sass/_plugin-test.scss",
     "test:ts": "run-s test:ts:static test:ts:dynamic",
-    "test:ts:dynamic": "TS_NODE_CACHE=false TS_NODE_PROJECT=\"src/tsconfig.json\" mocha --require ts-node/register --loader=ts-node/esm \"src/**/*-test.ts\"",
-    "test:ts:dynamic:inspect": "TS_NODE_CACHE=false TS_NODE_PROJECT=\"src/tsconfig.json\" mocha --require ts-node/register \"src/**/*-test.ts\" --inspect-brk",
+    "test:ts:dynamic": "TS_NODE_CACHE=false TS_NODE_PROJECT=\"src/tsconfig.json\" mocha --loader=ts-node/esm \"src/**/*-test.ts\"",
+    "test:ts:dynamic:inspect": "TS_NODE_CACHE=false TS_NODE_PROJECT=\"src/tsconfig.json\" mocha --loader=ts-node/esm \"src/**/*-test.ts\" --inspect-brk",
     "test:ts:static": "eslint --ext .ts \"src/**/*.ts\"",
     "watch": "run-p watch:*",
     "watch:ts": "onchange --initial --kill \"src/**/*.ts\" -- npm run build:ts"
   },
-  "devDependencies": {}
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  }
 }

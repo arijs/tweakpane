@@ -1,3 +1,5 @@
+import {resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import Alias from '@rollup/plugin-alias';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import Replace from '@rollup/plugin-replace';
@@ -5,16 +7,18 @@ import Typescript from '@rollup/plugin-typescript';
 import Autoprefixer from 'autoprefixer';
 import Postcss from 'postcss';
 import Cleanup from 'rollup-plugin-cleanup';
-import {terser as Terser} from 'rollup-plugin-terser';
-import Sass from 'sass';
+import terser from '@rollup/plugin-terser';
+import { compile as sassCompile } from 'sass';
 
-import Package from './package.json';
+import Package from './package.json' with { type: 'json' };
+
+const dirname = fileURLToPath(new URL('.', import.meta.url));
 
 async function compileCss() {
-	const css = Sass.renderSync({
-		file: 'src/main/sass/bundle.scss',
-		outputStyle: 'compressed',
-	}).css.toString();
+	const css = (await sassCompile(
+		'src/main/sass/bundle.scss',
+		{ style: 'compressed' },
+	)).css.toString();
 
 	const result = await Postcss([Autoprefixer]).process(css, {
 		from: undefined,
@@ -28,7 +32,7 @@ function getPlugins(css, shouldMinify) {
 			entries: [
 				{
 					find: '@tweakpane/core',
-					replacement: '../../node_modules/@tweakpane/core/dist/index.js',
+					replacement: resolve(dirname, '../../node_modules/@tweakpane/core/dist/index.js'),
 				},
 			],
 		}),
@@ -45,7 +49,7 @@ function getPlugins(css, shouldMinify) {
 		}),
 	];
 	if (shouldMinify) {
-		plugins.push(Terser());
+		plugins.push(terser());
 	}
 	return [
 		...plugins,
