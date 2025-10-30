@@ -1,13 +1,18 @@
 {
-  "name": "@tweakpane/core",
+  "name": "@arijs/tweakpane-core",
   "version": "2.0.5",
   "description": "Tweakpane core library",
-  "author": "cocopon",
+  "author": "cocopon, rhengles",
   "license": "MIT",
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
   "prettier": "../../.prettierrc.json",
+  "homepage": "https://github.com/arijs/tweakpane",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arijs/tweakpane.git"
+  },
   "scripts": {
     "prepack": "run-s clean build",
     "prepublishOnly": "npm test",

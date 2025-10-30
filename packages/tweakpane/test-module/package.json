@@ -1,5 +1,5 @@
 {
-  "name": "tweakpane-test-module",
+  "name": "@arijs/tweakpane-test-module",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -17,12 +17,12 @@
     "@rollup/plugin-alias": "^6.0.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
-    "@tweakpane/core": "file:../../core/tweakpane-core.tgz",
+    "@tweakpane/core": "file:../../core/arijs-tweakpane-core.tgz",
     "@types/jsdom": "^27.0.0",
     "jsdom": "^27.0.1",
     "npm-run-all": "^4.1.5",
     "rollup": "^4.52.5",
-    "tweakpane": "file:../tweakpane.tgz",
+    "tweakpane": "file:../arijs-tweakpane.tgz",
     "typescript": "^5.9.3"
   }
 }

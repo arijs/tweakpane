@@ -10,18 +10,23 @@ const panePackage = JSON.parse(
 	Fs.readFileSync(new URL('../package.json', import.meta.url)),
 );
 
+const reStartAt = /^@/
+const reSlash = /\//g;
+
+const getPkgName = (pkg) => pkg.replace(reStartAt, '').replace(reSlash, '-');
+
 // Remove version of core tgz file
 process.chdir('../core');
 
-const coreTgz = `tweakpane-core-${corePackage.version}.tgz`;
+const coreTgz = `${getPkgName(corePackage.name)}-${corePackage.version}.tgz`;
 if (Fs.existsSync(coreTgz)) {
-	Fs.renameSync(coreTgz, 'tweakpane-core.tgz');
+	Fs.renameSync(coreTgz, `${getPkgName(corePackage.name)}.tgz`);
 }
 
 // Remove version of tweakpane tgz file
 process.chdir('../tweakpane');
 
-const paneTgz = `tweakpane-${panePackage.version}.tgz`;
+const paneTgz = `${getPkgName(panePackage.name)}-${panePackage.version}.tgz`;
 if (Fs.existsSync(paneTgz)) {
-	Fs.renameSync(paneTgz, 'tweakpane.tgz');
+	Fs.renameSync(paneTgz, `${getPkgName(panePackage.name)}.tgz`);
 }

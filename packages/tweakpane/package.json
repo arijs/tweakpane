@@ -1,8 +1,8 @@
 {
-  "name": "tweakpane",
+  "name": "@arijs/tweakpane",
   "version": "4.0.5",
   "description": "A compact pane for fine-tuning parameters and monitoring value changes",
-  "author": "cocopon",
+  "author": "cocopon, rhengles",
   "license": "MIT",
   "homepage": "https://tweakpane.github.io/docs/",
   "main": "dist/tweakpane.js",
@@ -11,9 +11,9 @@
   "prettier": "../../.prettierrc.json",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cocopon/tweakpane.git"
+    "url": "https://github.com/arijs/tweakpane.git"
   },
-  "funding": "https://github.com/sponsors/cocopon",
+  "funding": "https://github.com/sponsors/rhengles",
   "files": [
     "dist"
   ],
