@@ -2,7 +2,7 @@ import {
 	BladeController,
 	createBladeController,
 	createDefaultPluginPool,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 import * as assert from 'assert';
 import {describe as context, describe, it} from 'mocha';
 

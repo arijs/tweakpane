@@ -3,7 +3,7 @@ import {
 	BladePlugin,
 	parseRecord,
 	VERSION,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 
 import {SeparatorBladeApi} from './api/separator.js';
 import {SeparatorController} from './controller/separator.js';

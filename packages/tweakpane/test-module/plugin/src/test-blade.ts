@@ -13,7 +13,7 @@ import {
 	ValueController,
 	VERSION,
 	ViewProps,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 
 import {TestView} from './test-view';
 

@@ -1,4 +1,4 @@
-import {FolderApi, PluginPool} from '@tweakpane/core';
+import {FolderApi, PluginPool} from '@arijs/tweakpane-core';
 
 import {RootController} from '../controller/root.js';
 

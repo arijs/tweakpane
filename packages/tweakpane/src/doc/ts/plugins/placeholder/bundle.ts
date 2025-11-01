@@ -11,7 +11,7 @@ import {
 	TpPluginBundle,
 	View,
 	ViewProps,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 
 const cn = ClassName('ph');
 

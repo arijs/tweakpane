@@ -1,15 +1,15 @@
 import {
-	ButtonBladeParams,
-	FolderBladeParams,
-	TabBladeParams,
-} from '@tweakpane/core';
-import {
 	ListBladeParams,
 	Pane,
 	SeparatorBladeParams,
 	SliderBladeParams,
 	TextBladeParams,
-} from 'tweakpane';
+} from '@arijs/tweakpane';
+import {
+	ButtonBladeParams,
+	FolderBladeParams,
+	TabBladeParams,
+} from '@arijs/tweakpane-core';
 
 import {toCss} from '../panepaint';
 import {createTheme, ThemeId} from '../themes';

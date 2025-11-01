@@ -1,4 +1,4 @@
-import {BladeState} from '@tweakpane/core';
+import {BladeState} from '@arijs/tweakpane-core';
 
 export interface PresetObject {
 	[key: string]: unknown;

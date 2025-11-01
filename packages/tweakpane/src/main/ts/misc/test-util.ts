@@ -12,7 +12,7 @@ import {
 	SliderPropsObject,
 	ValueMap,
 	ViewProps,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 import * as assert from 'assert';
 import {JSDOM} from 'jsdom';
 

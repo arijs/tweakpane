@@ -1,4 +1,4 @@
-import {Pane, TpPluginBundle} from 'tweakpane';
+import {Pane, TpPluginBundle} from '@arijs/tweakpane';
 
 import {selectContainer} from '../util.js';
 

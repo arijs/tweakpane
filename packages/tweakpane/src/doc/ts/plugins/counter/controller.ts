@@ -1,4 +1,4 @@
-import {Value, ValueController, ViewProps} from '@tweakpane/core';
+import {Value, ValueController, ViewProps} from '@arijs/tweakpane-core';
 
 import {CounterView} from './view';
 

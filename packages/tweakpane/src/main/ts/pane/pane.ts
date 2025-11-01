@@ -9,7 +9,7 @@ import {
 	TpPluginBundle,
 	ValueMap,
 	ViewProps,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 
 import {ListBladePlugin} from '../blade/list/plugin.js';
 import {RootApi} from '../blade/root/api/root.js';

@@ -1,5 +1,5 @@
 {
-  "name": "tweakpane-monorepo",
+  "name": "@arijs/tweakpane-monorepo",
   "version": "4.0.5",
   "private": true,
   "type":"module",

@@ -8,7 +8,7 @@ import {
 	VERSION,
 	ViewProps,
 	writePrimitive,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 
 import {TestView} from './test-view';
 

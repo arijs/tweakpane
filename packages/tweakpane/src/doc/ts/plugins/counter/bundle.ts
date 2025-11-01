@@ -1,4 +1,4 @@
-import {TpPluginBundle} from '@tweakpane/core';
+import {TpPluginBundle} from '@arijs/tweakpane-core';
 
 import {CounterInputPlugin} from './plugin';
 

@@ -9,7 +9,7 @@ const dirname = fileURLToPath(new URL('.', import.meta.url));
 export default () => {
 	return {
 		input: 'plugin/src/index.ts',
-		external: ['tweakpane'],
+		external: ['@arijs/tweakpane'],
 		output: {
 			file: 'plugin/dist/bundle.js',
 			format: 'esm',
@@ -22,8 +22,8 @@ export default () => {
 			Alias({
 				entries: [
 					{
-						find: '@tweakpane/core',
-						replacement: resolve(dirname, '../node_modules/@tweakpane/core/dist/index.js'),
+						find: '@arijs/tweakpane-core',
+						replacement: resolve(dirname, '../node_modules/@arijs/tweakpane-core/dist/index.js'),
 					},
 				],
 			}),

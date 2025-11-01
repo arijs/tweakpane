@@ -1,4 +1,9 @@
-import {Blade, FolderController, FolderProps, ViewProps} from '@tweakpane/core';
+import {
+	Blade,
+	FolderController,
+	FolderProps,
+	ViewProps,
+} from '@arijs/tweakpane-core';
 
 /**
  * @hidden

@@ -10,7 +10,7 @@ import {
 	VERSION,
 	ViewProps,
 	writePrimitive,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 import * as assert from 'assert';
 import {describe, it} from 'mocha';
 

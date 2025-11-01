@@ -79,7 +79,7 @@
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-replace": "^6.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
-    "@tweakpane/core": "../core",
+    "@arijs/tweakpane-core": "../core",
     "@types/dat.gui": "^0.7.13",
     "dat.gui": "^0.7.9",
     "fs-extra": "^11.3.2",

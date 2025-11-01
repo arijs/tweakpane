@@ -1,4 +1,4 @@
-import {Pane} from 'tweakpane';
+import {Pane} from '@arijs/tweakpane';
 
 import {selectContainer} from '../util.js';
 

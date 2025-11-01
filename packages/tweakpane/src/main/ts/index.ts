@@ -1,4 +1,4 @@
-import {Semver} from '@tweakpane/core';
+import {Semver} from '@arijs/tweakpane-core';
 
 export {
 	ArrayStyleListOptions,
@@ -35,7 +35,7 @@ export {
 	TpChangeEvent,
 	TpPlugin,
 	TpPluginBundle,
-} from '@tweakpane/core';
+} from '@arijs/tweakpane-core';
 
 export {ListBladeApi} from './blade/list/api/list.js';
 export {ListBladeParams} from './blade/list/plugin.js';

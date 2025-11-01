@@ -1,10 +1,10 @@
+import {Pane} from '@arijs/tweakpane';
 import {
 	colorToFunctionalRgbaString,
 	IntColor,
 	mapRange,
 	readIntColorString,
-} from '@tweakpane/core';
-import {Pane} from 'tweakpane';
+} from '@arijs/tweakpane-core';
 
 import {presetToState, stateToPreset} from '../preset';
 import {Sketch} from '../sketch.js';
@@ -28,7 +28,7 @@ export function initIndex() {
 		range: 0,
 		spacing: 24,
 		speed: 0.02,
-		title: 'Tweakpane',
+		title: '@arijs/tweakpane',
 	};
 
 	const PRESETS: {[key: string]: Environment} = {
@@ -40,7 +40,7 @@ export function initIndex() {
 			range: 0.77,
 			spacing: 24,
 			speed: 0.02,
-			title: 'Tweakpane',
+			title: '@arijs/tweakpane',
 		},
 		bubble: {
 			amp: {x: 0.3, y: 0.51},
@@ -50,7 +50,7 @@ export function initIndex() {
 			range: 0.5,
 			spacing: 48,
 			speed: 0.02,
-			title: 'Tweakpane',
+			title: '@arijs/tweakpane',
 		},
 		cloud: {
 			amp: {x: 0.07, y: 0},
@@ -60,7 +60,7 @@ export function initIndex() {
 			range: 0.63,
 			spacing: 48,
 			speed: 0.02,
-			title: 'Tweakpane',
+			title: '@arijs/tweakpane',
 		},
 	};
 

@@ -1,4 +1,4 @@
-import {SVG_NS} from '@tweakpane/core';
+import {SVG_NS} from '@arijs/tweakpane-core';
 
 function map(
 	v: number,

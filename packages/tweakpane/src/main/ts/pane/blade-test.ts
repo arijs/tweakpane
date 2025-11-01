@@ -1,4 +1,4 @@
-import {TpError} from '@tweakpane/core';
+import {TpError} from '@arijs/tweakpane-core';
 import * as assert from 'assert';
 
 import {SliderBladeApi} from '../blade/slider/api/slider.js';

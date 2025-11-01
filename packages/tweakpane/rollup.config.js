@@ -31,8 +31,8 @@ function getPlugins(css, shouldMinify) {
 		Alias({
 			entries: [
 				{
-					find: '@tweakpane/core',
-					replacement: resolve(dirname, '../../node_modules/@tweakpane/core/dist/index.js'),
+					find: '@arijs/tweakpane-core',
+					replacement: resolve(dirname, '../../node_modules/@arijs/tweakpane-core/dist/index.js'),
 				},
 			],
 		}),

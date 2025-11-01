@@ -1,4 +1,4 @@
-import {Value, View, ViewProps} from '@tweakpane/core';
+import {Value, View, ViewProps} from '@arijs/tweakpane-core';
 
 interface Config {
 	value: Value<number>;

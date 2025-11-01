@@ -1,4 +1,4 @@
-import {ListBladeApi, Pane, TextBladeApi} from 'tweakpane';
+import {ListBladeApi, Pane, TextBladeApi} from '@arijs/tweakpane';
 
 import {selectContainer} from '../util.js';
 

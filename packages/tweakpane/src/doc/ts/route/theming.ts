@@ -3,7 +3,7 @@ import {createTheme} from '../themes';
 import {selectContainer} from '../util.js';
 
 declare let hljs: any;
-import {Pane} from 'tweakpane';
+import {Pane} from '@arijs/tweakpane';
 
 function applyPreviewHtml(selector: string, theme: Theme, comment: string) {
 	const elem = document.querySelector(selector);

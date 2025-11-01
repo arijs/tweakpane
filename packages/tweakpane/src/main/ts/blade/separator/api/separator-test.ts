@@ -1,4 +1,4 @@
-import {createBlade, ViewProps} from '@tweakpane/core';
+import {createBlade, ViewProps} from '@arijs/tweakpane-core';
 import {describe, it} from 'mocha';
 
 import {
